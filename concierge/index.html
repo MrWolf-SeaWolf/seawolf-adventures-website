@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sea Wolf Concierge | Your Trip Starts Here</title>
+  <meta name="description" content="Connect with your Sea Wolf Adventures concierge on Telegram. Everything you need to know before and during your Kwakwaka'wakw Territory, Northern Vancouver Island expedition." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://seawolfadventures.ca/concierge/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <style>
+    .concierge-hero {
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: var(--forest-dark);
+      padding: 8rem 1.5rem 4rem;
+    }
+    .concierge-hero h1 {
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      color: var(--white);
+      margin-bottom: 1rem;
+    }
+    .concierge-hero .hero-eyebrow {
+      color: var(--gold);
+      margin-bottom: 1.5rem;
+    }
+    .concierge-hero p {
+      color: var(--cream);
+      font-size: 1.15rem;
+      max-width: 600px;
+      margin: 0 auto 2.5rem;
+      line-height: 1.8;
+    }
+    .telegram-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      background: #229ED9;
+      color: #fff;
+      font-family: 'Jost', sans-serif;
+      font-weight: 600;
+      font-size: 1.05rem;
+      padding: 1rem 2rem;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    .telegram-cta:hover { opacity: 0.88; }
+    .telegram-cta svg { flex-shrink: 0; }
+    .steps-section {
+      background: var(--black);
+      padding: 5rem 1.5rem;
+    }
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2rem;
+      max-width: 960px;
+      margin: 3rem auto 0;
+    }
+    .step-card {
+      border: 1px solid rgba(200,146,42,0.25);
+      border-radius: 4px;
+      padding: 2rem;
+    }
+    .step-number {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 3rem;
+      font-weight: 300;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+    .step-card h3 {
+      font-size: 1.15rem;
+      color: var(--white);
+      margin-bottom: 0.75rem;
+    }
+    .step-card p {
+      color: var(--cream);
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+    .info-section {
+      background: var(--forest-dark);
+      padding: 5rem 1.5rem;
+    }
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      max-width: 960px;
+      margin: 3rem auto 0;
+    }
+    .info-card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(200,146,42,0.2);
+      border-radius: 4px;
+      padding: 1.75rem;
+    }
+    .info-card .label {
+      color: var(--gold);
+      font-size: 0.75rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-family: 'Jost', sans-serif;
+      font-weight: 500;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    .info-card h3 {
+      color: var(--white);
+      font-size: 1.1rem;
+      margin-bottom: 0.75rem;
+    }
+    .info-card p, .info-card li {
+      color: var(--cream);
+      font-size: 0.9rem;
+      line-height: 1.7;
+    }
+    .info-card ul {
+      padding-left: 1.2rem;
+      margin: 0;
+    }
+    .final-cta {
+      background: var(--forest);
+      padding: 5rem 1.5rem;
+      text-align: center;
+    }
+    .final-cta h2 {
+      color: var(--white);
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      margin-bottom: 1rem;
+    }
+    .final-cta p {
+      color: var(--cream);
+      max-width: 540px;
+      margin: 0 auto 2.5rem;
+      font-size: 1.05rem;
+      line-height: 1.8;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header" role="banner">
+    <nav class="nav-inner" aria-label="Main navigation">
+      <a href="/" class="nav-logo" aria-label="Sea Wolf Adventures, Home">
+        <div class="nav-logo-mark">
+          <img src="../assets/wolf-icon-transparent.png" alt="Sea Wolf Adventures Indigenous wolf crest" width="38" height="38" />
+        </div>
+        <div class="nav-logo-text">
+          <span class="brand-name">Sea Wolf Adventures</span>
+          <span class="brand-tag">Kwakwaka'wakw Territory, Northern Vancouver Island</span>
+        </div>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="/sea-wolf-lodge-package/">Lodge Package</a></li>
+        <li><a href="/grizzly-bears-of-the-wild/">Day Tours</a></li>
+        <li><a href="/about-sea-wolf-adventures/">About</a></li>
+        <li><a href="/contact-us/">Contact</a></li>
+        <li><a href="/journal/">Journal</a></li>
+      </ul>
+      <a href="/contact-us/" class="btn-book">Inquire Now</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- HERO -->
+    <section class="concierge-hero">
+      <div>
+        <p class="hero-eyebrow section-label">Sea Wolf Concierge</p>
+        <h1>Your Journey<br />Starts Here</h1>
+        <p>
+          Before you arrive, we're already with you. Connect with your Sea Wolf concierge on Telegram, your direct line for everything leading up to your expedition and everything that unfolds once you're on the water.
+        </p>
+        <a href="https://t.me/SeaWolfAdventuresBot" class="telegram-cta" target="_blank" rel="noopener" aria-label="Open Sea Wolf Concierge on Telegram">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.17 13.857l-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.978.702z"/>
+          </svg>
+          Connect on Telegram
+        </a>
+        <p style="margin-top: 1.5rem; font-size: 0.85rem; color: var(--warm-grey);">
+          Don't have Telegram? <a href="https://telegram.org/dl" target="_blank" rel="noopener" style="color: var(--gold);">Download it free</a>; it takes two minutes.
+        </p>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="steps-section">
+      <div class="container">
+        <p class="section-label" style="text-align: center;">How It Works</p>
+        <h2 style="text-align: center; color: var(--white);">Three Simple Steps</h2>
+        <div class="steps-grid">
+          <div class="step-card fade-up">
+            <div class="step-number">01</div>
+            <h3>Download Telegram</h3>
+            <p>Available free on iPhone and Android. Telegram is the most reliable messaging platform for remote areas, and it's how your Sea Wolf concierge reaches you before, during, and after your trip.</p>
+          </div>
+          <div class="step-card fade-up fade-up-delay-2">
+            <div class="step-number">02</div>
+            <h3>Connect With Your Concierge</h3>
+            <p>Tap the button above or search <strong style="color: var(--gold);">@SeaWolfAdventuresBot</strong> in Telegram. Your concierge will confirm your booking details, answer questions, and begin preparing you for the expedition.</p>
+          </div>
+          <div class="step-card fade-up fade-up-delay-3">
+            <div class="step-number">03</div>
+            <h3>You're Taken Care Of</h3>
+            <p>From packing lists to weather updates to what time the boat departs, your concierge has every detail. You focus on arriving ready. We handle the rest.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING & QUESTIONS -->
+    <section class="section-pad" style="background: var(--black);">
+      <div class="container">
+        <div class="info-grid">
+          <div class="info-card">
+            <span class="label">Pricing</span>
+            <h3>Subscription & Top-ups</h3>
+            <p style="margin-bottom: 1rem;">The Sea Wolf Concierge service is designed to be accessible and flexible:</p>
+            <ul class="info-list">
+              <li><strong>Monthly Subscription:</strong> $9.00 / month</li>
+              <li><strong>Top-ups:</strong> $39.00 for additional priority support</li>
+              <li>Cancel anytime through the Telegram bot.</li>
+            </ul>
+          </div>
+          <div class="info-card">
+            <span class="label">Sample Questions</span>
+            <h3>What to Ask Your Concierge</h3>
+            <ul class="info-list">
+              <li>"What's the weather forecast for my tour tomorrow?"</li>
+              <li>"Can you confirm my pick-up time at the hotel?"</li>
+              <li>"I forgot my binoculars, can I rent some?"</li>
+              <li>"Where is the best place for dinner in Port McNeill tonight?"</li>
+              <li>"What should I wear for the grizzly bear viewing?"</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT WE COVER -->
+    <section class="info-section">
+      <div class="container">
+        <p class="section-label" style="text-align: center;">What Your Concierge Covers</p>
+        <h2 style="text-align: center; color: var(--white);">Unequivocal Trip Details</h2>
+        <div class="info-grid">
+          <div class="info-card fade-up">
+            <span class="label">Before You Arrive</span>
+            <h3>Pre-Trip Preparation</h3>
+            <ul>
+              <li>Confirmation of your booking and dates</li>
+              <li>What to pack, and what to leave home</li>
+              <li>Weather and seasonal conditions</li>
+              <li>Travel directions and meeting point</li>
+              <li>Any special dietary or accessibility needs</li>
+            </ul>
+          </div>
+          <div class="info-card fade-up fade-up-delay-2">
+            <span class="label">Day Of</span>
+            <h3>Departure Details</h3>
+            <ul>
+              <li>Exact departure time and location</li>
+              <li>What to expect when you arrive at the boat</li>
+              <li>Vessel and guide introductions</li>
+              <li>Safety briefing overview</li>
+              <li>Wildlife conditions for the day</li>
+            </ul>
+          </div>
+          <div class="info-card fade-up fade-up-delay-3">
+            <span class="label">On the Water</span>
+            <h3>During Your Expedition</h3>
+            <ul>
+              <li>Real-time wildlife sighting updates</li>
+              <li>Cultural context from your Kwakwaka'wakw guide</li>
+              <li>Photo opportunities and tips</li>
+              <li>Note: cell service is limited on the water; your guide is your connection</li>
+            </ul>
+          </div>
+          <div class="info-card fade-up">
+            <span class="label">After Your Trip</span>
+            <h3>Post-Expedition</h3>
+            <ul>
+              <li>Trip photos and memories</li>
+              <li>Resources on the wildlife and culture you experienced</li>
+              <li>How to stay connected with Sea Wolf Adventures</li>
+              <li>Booking future expeditions</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final-cta">
+      <h2>Ready to Connect?</h2>
+      <p>Download Telegram and reach your Sea Wolf concierge today. Your expedition begins the moment you say hello.</p>
+      <a href="https://t.me/SeaWolfAdventuresBot" class="telegram-cta" target="_blank" rel="noopener">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.17 13.857l-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.978.702z"/>
+        </svg>
+        Open in Telegram
+      </a>
+      <p style="margin-top: 1.5rem; font-size: 0.85rem; color: var(--cream);">
+        Or email us: <a href="mailto:lodge@seawolfadventures.ca" style="color: var(--gold);">lodge@seawolfadventures.ca</a>
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="../assets/wolf-icon-transparent.png" alt="Sea Wolf Adventures logo" width="60" height="60" />
+          <p>Indigenous Entrepreneur Owned and Operated</p>
+          <p class="footer-tagline">In partnership with Sointula Lodge</p>
+        </div>
+        <div class="footer-nav">
+          <div class="footer-col">
+            <h4>Experiences</h4>
+            <ul>
+              <li><a href="/sea-wolf-lodge-package/">Lodge Package</a></li>
+              <li><a href="/grizzly-bears-of-the-wild/">Grizzly Bear Day Tours</a></li>
+              <li><a href="/wildlife-viewing-cultural-tours/">Wildlife & Culture</a></li>
+              <li><a href="/journal/">Journal</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Information</h4>
+            <ul>
+              <li><a href="/about-sea-wolf-adventures/">About Us</a></li>
+              <li><a href="/additional-information/">Additional Info</a></li>
+              <li><a href="/concierge/">Concierge</a></li>
+              <li><a href="/contact-us/">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <div class="footer-contact-block">
+              <p class="contact-label">Lodge Packages</p>
+              <a href="tel:12508000891">1-250-800-0891</a>
+              <a href="mailto:lodge@seawolfadventures.ca">lodge@seawolfadventures.ca</a>
+            </div>
+            <div class="footer-contact-block">
+              <p class="contact-label">Day Tours</p>
+              <a href="tel:18003810132">1-800-381-0132</a>
+              <a href="mailto:info@seawolfadventures.ca">info@seawolfadventures.ca</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Sea Wolf Adventures. Kwakwaka'wakw Territory, Northern Vancouver Island, BC.</p>
+        <p><a href="#" style="color: var(--warm-grey); font-size: 0.8rem;">Preview the activity waiver</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+# Sea Wolf Adventures: robots.txt
+# Hosting: Cloudflare Pages
+# https://seawolfadventures.ca
+
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Block WordPress admin paths (not present on static site but precautionary)
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+Disallow: /wp-content/
+Disallow: /wp-includes/
+
+# Block Checkfront paths (booking engine handled separately)
+Disallow: /reserve/
+
+# Sitemap
+Sitemap: https://seawolfadventures.ca/sitemap.xml

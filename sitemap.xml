@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Sea Wolf Adventures Sitemap
+       Domain: https://seawolfadventures.ca
+       Generated: 2026-03-09
+       Hosting: Cloudflare Pages
+       Regenerate after any content update and re-submit to Google Search Console.
+  -->
+
+  <!-- ══ Homepage ══ -->
+  <url>
+    <loc>https://seawolfadventures.ca/</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://seawolfadventures.ca/images/mike-selects/misty-mountains-1.jpg</image:loc>
+      <image:title>Great Bear Rainforest, dense coastal forest in mist, Northern Vancouver Island BC</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://seawolfadventures.ca/images/grizzly/grizzly-mossy-boulders.jpg</image:loc>
+      <image:title>Grizzly bear on mossy boulders in the Great Bear Rainforest BC, Sea Wolf Adventures</image:title>
+    </image:image>
+  </url>
+
+  <!-- ══ Lodge Package: CRITICAL: Google Ads landing page ══ -->
+  <url>
+    <loc>https://seawolfadventures.ca/sea-wolf-lodge-package/</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://seawolfadventures.ca/images/aerial/aerial-golden-hour.jpg</image:loc>
+      <image:title>Sea Wolf expedition vessel at golden hour, all-inclusive grizzly bear lodge package BC</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://seawolfadventures.ca/images/grizzly/grizzly-salmon-rapids.jpg</image:loc>
+      <image:title>Grizzly bear catching salmon in river rapids, Great Bear Rainforest, lodge package BC</image:title>
+    </image:image>
+  </url>
+
+  <!-- ══ Wildlife &amp; Cultural Tours ══ -->
+  <url>
+    <loc>https://seawolfadventures.ca/wildlife-viewing-cultural-tours/</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+    <image:image>
+      <image:loc>https://seawolfadventures.ca/images/mike-selects/orca-dorsal-mountains.jpg</image:loc>
+      <image:title>Orca whale with tall dorsal fin and mountain backdrop, orca watching Northern Vancouver Island</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://seawolfadventures.ca/images/grizzly/grizzly-waterfall.jpg</image:loc>
+      <image:title>Grizzly bear in waterfall, Great Bear Rainforest, grizzly bear tours British Columbia</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://seawolfadventures.ca/images/mike-selects/sea-lions-waterfall.jpg</image:loc>
+      <image:title>Steller sea lions on surf-battered rocks, wildlife viewing Northern Vancouver Island BC</image:title>
+    </image:image>
+  </url>
+
+  <!-- ══ About ══ -->
+  <url>
+    <loc>https://seawolfadventures.ca/about-sea-wolf-adventures/</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://seawolfadventures.ca/images/aerial/aerial-deck-overhead.jpg</image:loc>
+      <image:title>Overhead aerial of Sea Wolf vessel deck with Indigenous Kwak'wala place-name map</image:title>
+    </image:image>
+  </url>
+
+  <!-- ══ Contact ══ -->
+  <url>
+    <loc>https://seawolfadventures.ca/contact-us/</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://seawolfadventures.ca/concierge/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://seawolfadventures.ca/grizzly-bears-of-the-wild/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://seawolfadventures.ca/additional-information/</loc>
+    <lastmod>2026-03-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://seawolfadventures.ca/journal/</loc>
+    <lastmod>2026-03-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+</urlset>
