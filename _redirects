@@ -1,35 +1,20 @@
 # Sea Wolf Adventures — Cloudflare Pages Redirects
 # Format: [source] [destination] [status code]
-# https://developers.cloudflare.com/pages/configuration/redirects/
-#
-# CRITICAL: Preserve Google Ads quality score links and existing SEO equity
 
 # ── Old WordPress page slugs → new static URLs (301 permanent) ──────────
-
-# Lodge package — existing Google Ads landing page → new URL
 /all-inclusive-packages/    /sea-wolf-lodge-package/    301
 /all-inclusive-packages     /sea-wolf-lodge-package/    301
-
-# Book Now → Checkfront (external)
 /book-now/                  https://seawolfadventures.checkfront.com/reserve/    301
 /book-now                   https://seawolfadventures.checkfront.com/reserve/    301
 /reserve/                   https://seawolfadventures.checkfront.com/reserve/    301
 /reserve                    https://seawolfadventures.checkfront.com/reserve/    301
 /booking/                   https://seawolfadventures.checkfront.com/reserve/    301
 /bookings/                  https://seawolfadventures.checkfront.com/reserve/    301
-
-# About page — old WordPress slug
 /about/                     /about-sea-wolf-adventures/    301
 /about                      /about-sea-wolf-adventures/    301
-
-# Contact page — old WordPress slug
 /contact/                   /contact-us/    301
 /contact                    /contact-us/    301
-
-# Wildlife tours — same slug, but ensure no trailing-slash mismatch
 /wildlife-viewing-cultural-tours    /wildlife-viewing-cultural-tours/    301
-
-# Common WordPress leftovers that may have inbound links
 /tours/                     /wildlife-viewing-cultural-tours/    301
 /tours                      /wildlife-viewing-cultural-tours/    301
 /grizzly-tours/             /wildlife-viewing-cultural-tours/    301
@@ -45,5 +30,5 @@
 /feed/                      /    301
 /wp-content/*               /    200
 
-# Splat catch-all: any unmatched path → homepage
-/*    /    200
+# DO NOT use a catch-all redirect like /* / 200 as it breaks subfolders
+# Cloudflare Pages handles index.html in subfolders automatically.
