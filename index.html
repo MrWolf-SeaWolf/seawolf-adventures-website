@@ -113,7 +113,7 @@
 <body>
 
   <!-- ════════════════════ NAVIGATION ════════════════════ -->
-  <nav class="nav" role="navigation" aria-label="Main navigation">
+  <nav class="nav" onclick="if(event.target.tagName !== 'A' && event.target.tagName !== 'SPAN' && window.innerWidth < 960) window.location.href='https://seawolfadventures.checkfront.com/reserve/?item_id=88'" role="navigation" aria-label="Main navigation">
     <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true" />
 
     <a href="/" class="nav-logo" aria-label="Sea Wolf Adventures, Home">

@@ -2583,3 +2583,112 @@ section { position: relative; }
   .nav-logo-text .brand-tag { font-size: 0.5rem !important; }
   .nav { padding: 0 0.75rem !important; }
 }
+
+@media (max-width: 960px) {
+  .nav { 
+  }
+  .nav-links {
+    display: none; /* Keep the main list hidden */
+    position: absolute;
+    top: var(--nav-height);
+    left: 0; right: 0;
+    background: rgba(8,12,8,0.98);
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+  /* Show the CTA button even when nav-links are hidden */
+  .nav-links .nav-cta-wrapper {
+  }
+  .nav-cta {
+    white-space: nowrap;
+  }
+  .nav-toggle:checked ~ .nav-links {
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-logo-text { display: none; } /* Hide text on very small screens to make room for button */
+  .nav-logo { gap: 0.5rem; }
+}
+
+@media (max-width: 960px) {
+  .nav { 
+    padding: 0 1rem !important; 
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+  }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: var(--nav-height);
+    left: 0; right: 0;
+    background: rgba(8,12,8,0.98);
+    flex-direction: column;
+    padding: 1rem 0;
+    z-index: 999;
+  }
+  /* Show the CTA button even when nav-links are hidden */
+  .nav-links .nav-cta-wrapper {
+    display: block !important;
+    position: static !important;
+    order: -1; /* Move to top if needed */
+  }
+  /* On mobile, we want the CTA to be visible in the nav bar, not just the menu */
+  .nav-cta {
+    display: inline-flex !important;
+    padding: 0.5rem 1rem !important;
+    font-size: 0.7rem !important;
+    margin: 0 !important;
+    white-space: nowrap;
+    background: var(--gold) !important;
+    color: var(--black) !important;
+    border-radius: 3px;
+    font-weight: 600;
+  }
+  .nav-toggle:checked ~ .nav-links {
+    display: flex !important;
+  }
+  .nav-logo-text .brand-name { font-size: 1rem !important; }
+  .nav-logo-text .brand-tag { font-size: 0.5rem !important; }
+  
+  /* Layout for mobile nav bar */
+  .nav-logo { flex: 1; }
+  .nav-hamburger { order: 3; margin-left: 1rem; }
+  
+  /* Special handling to pull the CTA out of the hidden menu on mobile */
+  .nav-links {
+     display: none !important;
+  }
+  .nav-toggle:checked ~ .nav-links {
+     display: flex !important;
+  }
+}
+
+/* Custom CSS to show the CTA button in the nav bar on mobile */
+@media (max-width: 960px) {
+  .nav::after {
+    content: 'BOOK A DAY TOUR';
+    display: inline-flex;
+    background: #c8922a;
+    color: #080c08;
+    padding: 0.5rem 1rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    margin-left: auto;
+    order: 2;
+  }
+  /* Hide the original CTA inside the menu if we use the pseudo-element */
+  .nav-cta-wrapper { display: none !important; }
+}
+
+@media (max-width: 480px) {
+  .nav-logo-text { display: none; }
+  .nav-logo { flex: 0; }
+  .nav::after { font-size: 0.65rem; padding: 0.4rem 0.8rem; }
+}
