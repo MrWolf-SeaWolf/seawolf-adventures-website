@@ -2777,3 +2777,75 @@ section { position: relative; }
     height: 32px !important;
   }
 }
+
+
+/* ─── MOBILE OVERHAUL: STICKY FOOTER & CLEAN NAV ─── */
+@media (max-width: 960px) {
+  /* 1. Clean up the top nav: Logo and Hamburger only */
+  .nav {
+    padding: 0 1.25rem !important;
+    justify-content: space-between !important;
+    height: 70px !important;
+    z-index: 2000 !important;
+  }
+  
+  .nav-logo {
+    max-width: 75% !important;
+  }
+  
+  .nav-logo-text .brand-name {
+    font-size: 1rem !important;
+  }
+  
+  .nav-logo-text .brand-tag {
+    display: none !important;
+  }
+
+  /* 2. Hide the CTA button from the top nav on mobile */
+  .nav-links .nav-cta {
+    display: none !important;
+  }
+
+  /* 3. Create the Sticky Mobile Footer */
+  .mobile-sticky-footer {
+    display: flex !important;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 65px;
+    background: var(--gold);
+    z-index: 3000;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 -4px 20px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+  }
+
+  .mobile-sticky-footer span {
+    color: var(--black);
+    font-family: 'Jost', sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+
+  /* 4. Add padding to body so content isn't hidden by footer */
+  body {
+    padding-bottom: 65px !important;
+  }
+  
+  /* 5. Ensure hero content is below nav */
+  .hero {
+    padding-top: 70px !important;
+  }
+}
+
+/* Hide sticky footer on desktop */
+@media (min-width: 961px) {
+  .mobile-sticky-footer {
+    display: none !important;
+  }
+}
