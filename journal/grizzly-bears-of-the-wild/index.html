@@ -12,6 +12,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../../assets/css/main.css" />
   <style>
+    :root {
+      --gold: #c8922a;
+      --white: #ffffff;
+      --cream: #f8f5f0;
+      --forest-dark: #0a0c0b;
+    }
     .blog-post {
       max-width: 800px;
       margin: 0 auto;
@@ -61,30 +67,33 @@
 </head>
 <body>
 
-  <header class="site-header" role="banner">
-    <nav class="nav-inner" aria-label="Main navigation">
-      <a href="/" class="nav-logo" aria-label="Sea Wolf Adventures, Home">
-        <div class="nav-logo-mark">
-          <img src="../../assets/wolf-icon-transparent.png" alt="Sea Wolf Adventures Indigenous wolf crest" width="38" height="38" />
-        </div>
-        <div class="nav-logo-text">
-          <span class="brand-name">Sea Wolf Adventures</span>
-          <span class="brand-tag">Kwakwaka'wakw Territory, Northern Vancouver Island</span>
-        </div>
-      </a>
-      <ul class="nav-links" role="list">
-        <li><a href="/sea-wolf-lodge-package/">Lodge Package</a></li>
-        <li><a href="/grizzly-bears-of-the-wild/">Day Tours</a></li>
-        <li><a href="/about-sea-wolf-adventures/">About</a></li>
-        <li><a href="/contact-us/">Contact</a></li>
-        <li><a href="/journal/">Journal</a></li>
-      </ul>
-      <a href="/contact-us/" class="btn-book">Inquire Now</a>
-      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </nav>
-  </header>
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true" />
+
+    <a href="/" class="nav-logo" aria-label="Sea Wolf Adventures, Home">
+      <div class="nav-logo-mark">
+        <img src="../../assets/wolf-icon-transparent.png" alt="Sea Wolf Adventures Indigenous wolf crest" width="38" height="38" />
+      </div>
+      <div class="nav-logo-text">
+        <span class="brand-name">Sea Wolf Adventures</span>
+        <span class="brand-tag">Kwakwaka'wakw Territory, Northern Vancouver Island</span>
+      </div>
+    </a>
+
+    <label for="nav-toggle" class="nav-hamburger" aria-label="Toggle navigation" role="button">
+      <span></span><span></span><span></span>
+    </label>
+
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/sea-wolf-lodge-package/">Lodge Package</a></li>
+      <li><a href="/wildlife-viewing-cultural-tours/">Wildlife &amp; Tours</a></li>
+      <li><a href="/about-sea-wolf-adventures/">About</a></li>
+      <li><a href="/contact-us/">Contact</a></li>
+      <li><a href="/journal/">Journal</a></li>
+      <li><a href="https://seawolfadventures.checkfront.com/reserve/?item_id=88" class="nav-cta" target="_blank" rel="noopener">Book a Day Tour</a></li>
+    </ul>
+  </nav>
 
   <main id="main-content">
 
