@@ -2714,3 +2714,66 @@ section { position: relative; }
   .hero-content { z-index: 1; } /* Ensure hero content is below nav */
   .nav { z-index: 2000; } /* Ensure nav is above everything */
 }
+
+
+/* ─── MOBILE OVERLAP FIX V2 ─── */
+@media (max-width: 960px) {
+  .nav { 
+    padding: 0 1rem !important; 
+    justify-content: space-between !important;
+    height: 80px !important; /* Slightly taller for better touch targets */
+  }
+  .nav-logo {
+    max-width: 50% !important;
+  }
+  .nav-logo-text .brand-name {
+    font-size: 0.9rem !important;
+  }
+  .nav-logo-text .brand-tag {
+    display: none !important; /* Hide tag on small screens to save space */
+  }
+  
+  /* Ensure the CTA is visible and not overlapping */
+  .nav-links {
+    display: none; /* Hidden by default */
+  }
+  
+  .nav-toggle:checked ~ .nav-links {
+    display: flex !important;
+    z-index: 1001 !important;
+  }
+
+  /* Move the CTA button out of the flow or give it clear space */
+  .nav-links li:last-child {
+    order: -1 !important; /* Move to top of mobile menu */
+    padding: 1rem !important;
+    border-bottom: 1px solid var(--border);
+  }
+  
+  .nav-cta { 
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+    margin: 0 !important;
+    padding: 0.8rem !important;
+    font-size: 0.85rem !important;
+  }
+  
+  /* Fix for the 'overlap' - ensure hero content doesn't push into nav space */
+  .hero {
+    padding-top: 80px !important;
+  }
+  .hero-content {
+    padding-bottom: 4rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-logo-text .brand-name {
+    font-size: 0.8rem !important;
+  }
+  .nav-logo-mark {
+    width: 32px !important;
+    height: 32px !important;
+  }
+}
