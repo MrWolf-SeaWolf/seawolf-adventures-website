@@ -2692,3 +2692,14 @@ section { position: relative; }
   .nav-logo { flex: 0; }
   .nav::after { font-size: 0.65rem; padding: 0.4rem 0.8rem; }
 }
+
+@media (max-width: 960px) {
+  .nav-logo-text .brand-tag {
+  }
+  .nav-logo {
+  }
+}
+@media (max-width: 400px) {
+  .nav-logo-text .brand-tag {
+  }
+}
