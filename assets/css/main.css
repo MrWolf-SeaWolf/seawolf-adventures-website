@@ -2849,3 +2849,84 @@ section { position: relative; }
     display: none !important;
   }
 }
+
+
+/* ─── FINAL MOBILE OVERHAUL ─── */
+@media (max-width: 960px) {
+  .nav {
+    display: flex !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    height: 70px !important;
+    background: rgba(8, 12, 8, 0.95) !important;
+    backdrop-filter: blur(10px) !important;
+    padding: 0 1rem !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    z-index: 9999 !important;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2) !important;
+  }
+  
+  .nav-logo {
+    display: flex !important;
+    align-items: center !important;
+    max-width: 70% !important;
+    text-decoration: none !important;
+  }
+  
+  .nav-logo-text .brand-name {
+    font-size: 0.9rem !important;
+    color: var(--gold) !important;
+    display: block !important;
+  }
+  
+  .nav-logo-text .brand-tag {
+    display: none !important;
+  }
+
+  .nav-links {
+    display: none !important; /* Hide all links including the old CTA */
+  }
+  
+  .nav-hamburger {
+    display: flex !important;
+    order: 2 !important;
+  }
+
+  .mobile-sticky-footer {
+    display: flex !important;
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    height: 60px !important;
+    background: #D4AF37 !important; /* Solid Gold */
+    z-index: 10000 !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-decoration: none !important;
+    box-shadow: 0 -4px 15px rgba(0,0,0,0.4) !important;
+  }
+
+  .mobile-sticky-footer span {
+    color: #080C08 !important; /* Deep Black */
+    font-family: 'Jost', sans-serif !important;
+    font-weight: 700 !important;
+    font-size: 0.9rem !important;
+    letter-spacing: 0.1em !important;
+    text-transform: uppercase !important;
+  }
+
+  body {
+    padding-top: 70px !important;
+    padding-bottom: 60px !important;
+  }
+}
+
+@media (min-width: 961px) {
+  .mobile-sticky-footer {
+    display: none !important;
+  }
+}
