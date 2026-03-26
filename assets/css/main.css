@@ -31,6 +31,8 @@ html {
 }
 
 body {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
   font-family: 'Jost', system-ui, sans-serif;
   background: var(--black);
   color: var(--cream);
@@ -51,9 +53,9 @@ h1, h2, h3, h4, .serif {
   font-weight: 600;
 }
 
-h1 { font-size: clamp(2.4rem, 5.5vw, 4.2rem); }
-h2 { font-size: clamp(2rem, 4vw, 3.2rem); }
-h3 { font-size: clamp(1.4rem, 2.5vw, 2rem); }
+h1 { font-size: clamp(1.8rem, 8vw, 4.2rem); word-wrap: break-word; overflow-wrap: break-word; }
+h2 { font-size: clamp(1.6rem, 6vw, 3.2rem); word-wrap: break-word; overflow-wrap: break-word; }
+h3 { font-size: clamp(1.3rem, 5vw, 2rem); word-wrap: break-word; overflow-wrap: break-word; }
 
 .section-label {
   display: block;
@@ -308,7 +310,7 @@ h3 { font-size: clamp(1.4rem, 2.5vw, 2rem); }
 .hero-content {
   position: relative;
   z-index: 2;
-  max-width: 820px;
+  max-width: 100%;
   padding: 0 4rem 7rem;
 }
 
@@ -345,7 +347,7 @@ h3 { font-size: clamp(1.4rem, 2.5vw, 2rem); }
   font-size: clamp(1rem, 1.6vw, 1.15rem);
   font-weight: 300;
   color: rgba(245,240,232,0.88);
-  max-width: 560px;
+  max-width: 100%;
   margin-bottom: 2.5rem;
   line-height: 1.8;
 }
@@ -660,6 +662,8 @@ section { position: relative; }
 .card:hover .card-img { transform: scale(1.06); }
 
 .card-body {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
   padding: 2rem;
 }
 
@@ -713,7 +717,7 @@ section { position: relative; }
   position: relative;
   z-index: 1;
   text-align: center;
-  max-width: 820px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 0 3rem;
 }
@@ -1187,6 +1191,8 @@ section { position: relative; }
 }
 
 .tour-card-body {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
   padding: 2rem 2rem 2.4rem;
 }
 
@@ -1780,7 +1786,9 @@ section { position: relative; }
 /* ─── SITEMAP / PRINT ─────────────────────────────────────────────────*/
 @media print {
   .nav, .footer, .hero-scroll { display: none; }
-  body { background: white; color: black; }
+  body {
+  word-wrap: break-word;
+  overflow-wrap: break-word; background: white; color: black; }
 }
 
 /* ═══════════════════════════════════════════════════════════════════════
@@ -2562,4 +2570,16 @@ section { position: relative; }
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
   }
+}
+
+@media (max-width: 768px) {
+  .hero-content { padding: 0 1.25rem 4rem !important; }
+  .hero h1 { font-size: 2.2rem !important; }
+  .hero-sub { font-size: 1rem !important; padding-right: 1rem; }
+}
+
+@media (max-width: 400px) {
+  .nav-logo-text .brand-name { font-size: 0.95rem !important; }
+  .nav-logo-text .brand-tag { font-size: 0.5rem !important; }
+  .nav { padding: 0 0.75rem !important; }
 }
