@@ -2703,3 +2703,14 @@ section { position: relative; }
   .nav-logo-text .brand-tag {
   }
 }
+
+
+/* ─── MOBILE OVERLAP FIX ─── */
+@media (max-width: 600px) {
+  .nav { padding: 0 0.75rem; }
+  .nav-logo-text .brand-name { font-size: 1rem; }
+  .nav-logo-text .brand-tag { display: none; }
+  .nav-cta { font-size: 0.65rem !important; padding: 0.4rem 0.6rem !important; }
+  .hero-content { z-index: 1; } /* Ensure hero content is below nav */
+  .nav { z-index: 2000; } /* Ensure nav is above everything */
+}
