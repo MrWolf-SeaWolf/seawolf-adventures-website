@@ -192,3 +192,17 @@
   }
 
 })();
+
+// Handle mobile menu scroll leak
+document.addEventListener('DOMContentLoaded', () => {
+    const navToggle = document.getElementById('nav-toggle');
+    if (navToggle) {
+        navToggle.addEventListener('change', function() {
+            if (this.checked) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
+        });
+    }
+});

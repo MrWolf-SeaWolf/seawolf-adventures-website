@@ -1,0 +1,10 @@
+.git/
+.wrangler/
+.npm-cache/
+node_modules/
+package.json
+package-lock.json
+__imports/
+__history/
+*.py
+*.pyc
